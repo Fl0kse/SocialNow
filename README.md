@@ -1,6 +1,6 @@
 # SocialNow
 
-### Image
+### Image in Docker (Install Docker for this command)
 To build project
 ```
 docker build --tag socialnow . 
@@ -16,6 +16,7 @@ To remove all images
 docker rm -vf $(docker ps -a -q)
 ```
 
+### Just in terminal
 To run without Docker
 ```
 uvicorn SocialNow.asgi:application --host 0.0.0.0 
