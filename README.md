@@ -15,3 +15,8 @@ To remove all images
 ```
 docker rm -vf $(docker ps -a -q)
 ```
+
+To run without Docker
+```
+uvicorn SocialNow.asgi:application --host 0.0.0.0 
+```
